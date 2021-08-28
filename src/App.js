@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Plyr from "plyr-react";
+import "plyr-react/dist/plyr.css";
 
-function App() {
+const videoSrc = {
+  type: "video",
+  sources: [
+    {
+      src: "https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
+      //provider: "youtube",
+    },
+  ],
+};
+
+// learn more https://github.com/sampotts/plyr#the-source-setter
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Plyr source={videoSrc} />
     </div>
   );
 }
 
-export default App;
+// export const MyComponent = () => {
+//   return (
+//     <>
+//       <Plyr source={videoSrc} />
+//     </>
+//   );
+// };
+
+//export default App;

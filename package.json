@@ -8,10 +8,14 @@
     "@testing-library/user-event": "^12.1.10",
     "plyr-react": "^3.1.0",
     "react": "^17.0.2",
+    "react-admin": "^3.17.3",
     "react-chat-widget": "^3.1.0",
     "react-chat-window": "^1.2.1",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.1",
     "react-scripts": "4.0.3",
+    "react-tooltip": "^4.2.21",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

@@ -28,7 +28,7 @@ code {
   border: 0;
   border-radius: 26px;
   border-radius: calc(var(--plyr-range-thumb-height, 13px) * 2);
-  color: #064757 !important;
+  color: red !important;
   color: var(
     --plyr-range-fill-background,
     var(--plyr-color-main, var(--plyr-color-main, #00b3ff))
@@ -44,4 +44,8 @@ code {
   padding: 0;
   transition: box-shadow 0.3s ease;
   width: 100%;
+}
+
+.nav-menu-items {
+  z-index: 999px !important;
 }
